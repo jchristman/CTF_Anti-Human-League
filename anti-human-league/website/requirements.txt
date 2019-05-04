@@ -1,0 +1,10 @@
+flask
+beautifulsoup4
+micawber
+pygments
+markdown
+peewee
+flask-blogging
+Pillow
+Flask-Session
+flask_sqlalchemy

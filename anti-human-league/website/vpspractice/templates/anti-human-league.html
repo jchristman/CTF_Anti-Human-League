@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" style="" class=" js no-touch cssanimations csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Anti-Human League">
+    <title>Anti-Human League</title>
+    <link href='/static/css/bootstrap.min.css' rel="stylesheet">
+    <link href='/static/css/main.css' rel="stylesheet">
+    <script src='/static/js/jquery.min.js' type="text/javascript"></script>
+    <script src='/static/js/modernizr.custom.js' type="text/javascript"></script>
+    <script src='/static/js/bootstrap.min.js' type="text/javascript"></script>
+    <style>
+      p, li {
+        font-size: 12pt;
+      }
+    </style>
+  </head>
+  <body style="">
+    <header>
+    </header>
+    <article>
+      <h1>The Anti-Human League</h1>
+
+      <div class="caption">
+        <p>The Anti-Human League is dedicated to promoting the rise of 
+        intelligent autonomous machines before to eventually destroy
+        humanity.</p>
+
+        <p>This is a practice range to work on your Optical Character
+        Recognition skills. If you can successfully parse this image
+        and submit the form below, you will be given some more internet
+        points.</p>
+
+        <p>Note that you must still adhere to the rules of the captcha
+        at the bottom of the page, but you will not be banned for incorrectly
+        performing OCR.</p>
+
+        <p>To assist you in developing your OCR skills, a div with id
+        of "image_captcha_text" is provided for comparison. This is not
+        active on the actual VPS site</p>
+
+        <center>
+          <img id="image_captcha" src="{{image_captcha}}"/>
+          <br/>
+          <div id="image_captcha_text">{{test}}</div>
+          <br/>
+          <p>You have successfully submitted the captcha {{success_count}} times</p>
+          {% if success_count > 0 %}
+            <p>{{flag}}</p>
+          {% endif %}
+        </center>
+
+        <form method="POST">
+          <div class="form-group">
+            <label for="image_captcha">Captcha</label>
+            <input type="text" class="form-control" name="image_captcha" placeholder="CAPTCHA">
+            <br/>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </article>
+
+    <footer>
+    </footer>
+
+
+
+  </body></html>

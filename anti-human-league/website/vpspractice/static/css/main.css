@@ -1,0 +1,64 @@
+/*
+ * Author: Robert Mah
+ */
+
+
+/* ==========================================================================
+   Base Styles and Bootstrap Modifications
+   ========================================================================== */
+
+@font-face {
+    font-family: 'tertreextra_bold';
+    src: url('../fonts/tertre-xbol-webfont.eot');
+    src: url('../fonts/tertre-xbol-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tertre-xbol-webfont.woff2') format('woff2'),
+         url('../fonts/tertre-xbol-webfont.woff') format('woff'),
+         url('../fonts/tertre-xbol-webfont.ttf') format('truetype'),
+         url('../fonts/tertre-xbol-webfont.svg#tertreextra_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'musketbold';
+    src: url('../fonts/musket_bold-webfont.eot');
+    src: url('../fonts/musket_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/musket_bold-webfont.woff2') format('woff2'),
+         url('../fonts/musket_bold-webfont.woff') format('woff'),
+         url('../fonts/musket_bold-webfont.ttf') format('truetype'),
+         url('../fonts/musket_bold-webfont.svg#musketbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, button, input, select, textarea {
+    color: #ddd;
+}
+
+body {
+    padding: 40px;
+    background: #111;
+    background-color: #111;
+    color: #ddd;
+}
+
+h1 {
+    text-align: center;
+    font-family: tertreextra_bold, impact, sans-serif;
+    font-size: 36pt;
+    letter-spacing: 3pt;
+    color: #ddd;
+}
+
+div {
+    font-size: 16pt;
+    font-family: verdana, arial, sans-serif;
+    margin: 24pt 72pt;
+    color: #aaa;
+}
+
+li {
+	margin: 6pt 0pt;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" style="" class=" js no-touch cssanimations csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Anti-Human League Captcha Practice</title>
+    <style>
+      p, li {
+        font-size: 12pt;
+      }
+    </style>
+  </head>
+  <body style="">
+      <h1>The Anti-Human League Captcha Practice</h1>
+      <div class="caption">
+        <p>The Anti-Human League is dedicated to promoting the rise of 
+        intelligent autonomous machines before to eventually destroy
+        humanity.</p>
+
+        <p>To prevent humans from accessing our resources, we have implemented
+        a captcha that only an autonomous system could solve. With each page
+        request you make, you must solve the captcha at the bottom of the page
+        and include the solution as a GET argument to your next page request.</p>
+
+        <p>A valid request will look like:</p>
+
+        <pre>http://ahl.dragonctf.com/practice/?captcha=example</pre>
+
+        <p>If your captcha is incorrect, you will be banned.</p>
+
+        <p>For practice, try solving the captcha at the bottom of this page. This time,
+        if you are correct enough times in a row, we will reward you with a digital
+        badge of honor, because internet points are the best.</p>
+
+        <p>Successful Captchas Submitted: {{SUCCESS_COUNT}}</p>
+        {% if SUCCESS_COUNT >= 100 %}
+          <p>{{FLAG}}</p>
+        {% endif %}
+      </div>
+  </body></html>
